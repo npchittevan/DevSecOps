@@ -21,6 +21,7 @@ jobs:
         with:
           url: http://43.205.191.71:8200
           role: gh-actions-role
+          jwtAudience: https://github.com
           method: jwt
           secrets: |
             aws/creds/terraform-role access_key | AWS_ACCESS_KEY_ID ;
